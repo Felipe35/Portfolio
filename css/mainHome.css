@@ -1,0 +1,105 @@
+/*==Index==*/
+
+main {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 800px;
+	min-height: 100vh;
+	margin: auto;
+}
+
+.logotype {
+
+	border: 5px solid black;
+	padding: 0.7em;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.logotype .subtittle{
+	text-align: center;
+	background: lightblue;
+	padding: 10px;
+	transition: .5s ease all;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+
+}
+
+.logotype .subtittle:hover {
+	background: lightgreen;
+}
+
+.animeText {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.animeText > div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: .3s ease all;
+}
+
+.animeText > div.animacion {
+	transform: translateY(-110px);
+}
+
+.animeText > div span {
+	font-size: 95px;
+	font-weight: normal;
+	line-height: 100px;
+}
+
+.animeText .segunda-linea {
+	position: absolute;
+	top: 110px;
+}
+
+@media screen and (max-width: 600px){
+
+	.animeText > div span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.animeText .segunda-linea {
+		top: 55px;
+	}
+	.animeText > div.animacion{
+		transform: translateY(-55px);
+	}
+	.logotype .subtittle {
+		font-size:20px;
+	}
+
+}
+
+/*==PORTFOLIO==*/
+
+.main_port{
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 800px;
+	margin-left: 100px;
+	
+}
+
+.portfolio {
+	width: 600px;
+	height: 600px;
+	align-items: center;
+	font-size: 50px;
+	
+}
+.portfolio_container_img img{
+	width: 300px;
+}
