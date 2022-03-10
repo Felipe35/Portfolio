@@ -2,7 +2,8 @@
 .logo {
 	color:#000000 ;
 	margin-left: 20px;
-	font-size:140px;
+	font-size:80px;
+	font-family: 'Inconsolata', monospace;
 	text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff
 
 }
@@ -16,8 +17,8 @@ header {
 	align-items: center;
 	box-shadow: 0 0 0 10px #838282,
 	0 0 0 11px #838282, 0 20px 20px -12px #000;
-	position: sticky;
-	top: 0;
+	position: fixed;
+	top:0;
 	z-index: 1000;
 }
 .navegador {
@@ -60,7 +61,7 @@ header {
 }
 
 .nav_img_face {
-	width:30px;
+	width:50px;
 	text-align: center;
 	padding: 10px;
 	margin: 5px;
@@ -69,17 +70,17 @@ header {
 
 }
 .nav_img_face:hover {
-	width: 40px;
+	width: 60px;
 	
 }
 
 .nav_img_git{
-	width: 30px;
+	width: 50px;
 	padding: 10px;
 	margin: 5px;
 	transition-property: width;
 	transition-duration: 0.5s;
 }
 .nav_img_git:hover {
-	width: 40px;
+	width: 60px;
 }

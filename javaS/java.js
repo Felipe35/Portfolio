@@ -1,55 +1,71 @@
-class TextoAnimado {
-	constructor(id, objetivo){
-	this.texto = document.getElementById(id);
-	this.objetivo = document.getElementById(objetivo);
-	this.letras = this.texto.innerText.split("");
 
-		this.texto.innerText = '';
+//Code for Modal Window
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
 
-		this.letras.forEach((letra) => {
-			this.texto.innerHTML = this.texto.innerHTML + `
-			<div>
-				<span>${letra}</span>
-				<span class="segunda-linea">${letra}</span>
-			</div>	
-			`
+open.addEventListener('click', () => {
+    modal_container.classList.add('show');
+});
 
-		});
+close.addEventListener('click',() => {
+	modal_container.classList.remove('show');
+})
 
-		this.objetivo.addEventListener('mouseenter', () =>{
-			let cuenta = 0;
+// class TextoAnimado {
+// 	constructor(id, objetivo){
+// 	this.texto = document.getElementById(id);
+// 	this.objetivo = document.getElementById(objetivo);
+// 	this.letras = this.texto.innerText.split("");
 
-			const intervalo = setInterval(() => {
-				if(cuenta < this.texto.children.length) {
-					this.texto.children[cuenta].classList.add('animacion');
-					cuenta = cuenta + 1;
-				}else {
-					clearInterval(intervalo)
-				}
+// 		this.texto.innerText = '';
 
-			}, 30);
-		});
+// 		this.letras.forEach((letra) => {
+// 			this.texto.innerHTML = this.texto.innerHTML + `
+// 			<div>
+// 				<span>${letra}</span>
+// 				<span class="segunda-linea">${letra}</span>
+// 			</div>	
+// 			`
 
-		this.objetivo.addEventListener('mouseleave', () =>{
-			let cuenta = 0;
+// 		});
 
-			const intervalo = setInterval(() => {
-				if(cuenta < this.texto.children.length) {
-					this.texto.children[cuenta].classList.remove('animacion');
-					cuenta = cuenta + 1;
-				}else {
-					clearInterval(intervalo)
-				}
+// 		this.objetivo.addEventListener('mouseenter', () =>{
+// 			let cuenta = 0;
 
-			}, 30);
-		});
+// 			const intervalo = setInterval(() => {
+// 				if(cuenta < this.texto.children.length) {
+// 					this.texto.children[cuenta].classList.add('animacion');
+// 					cuenta = cuenta + 1;
+// 				}else {
+// 					clearInterval(intervalo)
+// 				}
+
+// 			}, 30);
+// 		});
+
+// 		this.objetivo.addEventListener('mouseleave', () =>{
+// 			let cuenta = 0;
+
+// 			const intervalo = setInterval(() => {
+// 				if(cuenta < this.texto.children.length) {
+// 					this.texto.children[cuenta].classList.remove('animacion');
+// 					cuenta = cuenta + 1;
+// 				}else {
+// 					clearInterval(intervalo)
+// 				}
+
+// 			}, 30);
+// 		});
 
 
-			}
-		}
+// 			}
+// 		}
 
-new TextoAnimado('logo', 'logotype');
+// new TextoAnimado('logo', 'logotype');
 
 
 //Codigo para redireccionar a Info.html
+
+
 
