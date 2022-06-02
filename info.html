@@ -9,22 +9,24 @@
 	<link rel="stylesheet" type="text/css" href="css/mySkills.css">
 	<link rel="stylesheet" type="text/css" href="css/navegator.css">
 	<link rel="stylesheet" type="text/css" href="css/work.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQ.css">
+	<link rel="stylesheet" type="text/css" href="css/miniProyects.css">
 	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/4469d95a15.js" crossorigin="anonymous"></script>
 <title>Me</title>
 </head>
 <body>
-<header>
-	<a href="index.html"><h1 class="logo">Felipe</h1></a>
-	<nav class="navegador">
+<header id="header">
+	<a href="#home"><h1 class="logo" id="logo-tittle">Felipe</h1></a>
+	<nav class="navegador" id="navegador">
 		<ul class="nav_ul">
 			<li class="nav_li"><a href="#home">About Me</a></li>
 			<li class="nav_li"><a href="#mySkills">My Skills</a></li>
 			<li class="nav_li"><a href="#workExp">Work</a></li>
-			<li class="nav_li"><a href="#"><img class="nav_img_face" src="img/facebook-brands.svg"></a></li>
-			<li class="nav_li"><a href="#"><img class="nav_img_git" src="img/github-brands.svg"></a></li>
+			<li class="nav_li"><a href="https://www.facebook.com/andres.felipe.96387" target="_Blank"><img class="nav_img_face" src="img/facebook-brands.svg"></a></li>
+			<li class="nav_li"><a href="https://github.com/Felipe35" target="_Blank"><img class="nav_img_git" src="img/github-brands.svg"></a></li>
 		</ul>
 	</nav>
+	<div class="btn_nav" id="btn_nav"><i class="fas fa-bars"></i></div> 
 </header>
 
 <section class="main_container" id="home">
@@ -32,12 +34,32 @@
 		<h1 class="main_tittle"> Hey, I'm</h1>
 		<h2 class="main_tittle_h2">Felipe Heading to </h2>
 		<h3 class="main_tittle_h3">Web Development</h3>
-		<a href="#"class="container_contact">Contact me</a>
-		</div>
+		<button href="#"class="container_contact">Contact me</button>
 	</div>
-		<div class="container_img">
-			<img src="img/programmer.png"></img>
-		</div>
+<!--====Contact Info Modal Window====-->
+<div class="modal_contact_container hiddenContact">
+	<div class="btn_container"><button class="modal_btn btn_close">&times;</button></div>
+	<div class="modal_contac">
+		<form class="modal_form">Contact me
+			<ul class="modal_ul">
+				<li class="modal_li">First Name</li>
+				<input class="modal_input name" placeholder="Name"></input>
+				<li class="modal_li">Last Name</li>
+				<input class="modal_input lastName" placeholder="Last Name"></input>
+				<li class="modal_li">E-mail</li>
+				<input class="modal_input email" placeholder="E-Mail"></input>
+				<p>This section is currently under Development</p>
+			</ul>
+		</form>
+	</div>
+</div>
+
+<!--==Overlay Section for the Modal Window-->
+<div class="overlay hiddenContact"></div>
+
+
+<!--======IN DEVELOPING "IT HAS DISPLAY: NONE"==================================-->
+		<div class="container_img"><img src="img/programmer.png"></img></div>
 </section>
 <!--SECTION 2-->
 <div class="mainBlock" id="mySkills">
@@ -62,18 +84,46 @@
 <!--===Work Experience Block Modal===-->
 <h2 class="work_tittle"id="workExp">Here are some proyects that are working on</h2>
 <div class="work_section">
-	<button class="work_btn" id="open"><img class="work_img" src="img/Pina.jpg"></button>
-	<button class="work_btnDos" id="open"><img class="work_img" src="img/Pina.jpg"></button>
+	<button class="work_btn"><img class="work_img" src="img/Pina.jpg"></button>
+	
+	<button class="work_btnDos" id="open"><img class="work_img" src="img/Pina.jpg">In Development</button>
 </div>
 <!--===Work Experience Block Moda 1===-->
 
-	<div class="modal-container" id="modal_container">
+	<div class="modal-container hidden">
 		<div class="modal">
-			<img class="modal_img"src="img/PinaWebEdi.png"></img>
-			<button class="modal_btn_cerrar" id="close">Close</button>
+			<img class="modal_img"src="img/PinaWebEdi.png">
+			<button class="modal_btn_cerrar">Close</button>
+			
 		</div>
 	</div>
+<!--Mini Proyects links-->
+<!-- <section class="proyects_section_link">
+	<a href="MinProyects/index.html" class="proyects_link">Click to access some proyects</a>
+</section> -->
+<div class="forward_container"><a class="forward_link_arrow" href="MinProyects/index.html"><i class="fas fa-angle-right"></i></a><a class="forward_link" href="MinProyects/index.html" title="Go to miniProyects" id="inicio" >Go to Proyects</a></div>
+
+
+
+<footer class="footer_container">
+	<nav class="navFooter" id="navFooter">
+		<ul class="navFooter_ul">
+			<li class="navFooter_li"><a href="https://www.facebook.com/andres.felipe.96387" target="_Blank"><img class="nav_img_face" src="img/facebook-brands.svg"></a></li>
+			<li class="navFooter_li"><a href="https://github.com/Felipe35" target="_Blank"><img class="nav_img_git" src="img/github-brands.svg"></a></li>
+		</ul>
+		<ul class="navFooter_sub_ul">
+			<li class="navFooter_sub_li"><a class="navFooter_a" href="#home"></a>About Me</li>
+			<li class="navFooter_sub_li"><a class="navFooter_a" href='#mySkills'></a>My Skills</li>
+			<li class="navFooter_sub_li"><a class="navFooter_a" href="#workExp"></a> Work</li>
+		</ul>
+	</nav>
+</footer><!--In development-->
+<!-- 
+<li class="nav_li"><a href="#home">About Me</a></li>
+			<li class="nav_li"><a href="#mySkills">My Skills</a></li>
+			<li class="nav_li"><a href="#workExp">Work</a></li> -->
 
 <script type="text/javascript" src="javaS/java.js"></script>
+<script src="https://kit.fontawesome.com/4469d95a15.js" crossorigin="anonymous"></script>
 </body>
 </html>

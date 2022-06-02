@@ -1,0 +1,60 @@
+/*====Media Screen For Navegador===*/
+@media only screen and (max-width: 1002px) {
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    /* .logo {
+        display: none;
+    } */
+    .btn_nav {
+        display: flex;
+    }
+    nav {
+        height: 100%;
+        background-color: #838282;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        padding: 0 40px;
+        transition: all 500ms;
+    
+    }
+    /*==Moving Navegador==*/
+    .move_nav {
+        right: 0;
+    }
+    /*=====================*/
+    .nav_ul {
+        flex-direction:column;
+        flex-wrap: wrap;
+        text-align: center; 
+        margin-top: 40px; 
+        
+    }
+    .nav_li {
+        align-self: center;
+        
+    }
+    .nav_li:hover {
+        border-bottom: 1px solid #000000;
+        border-left:none;
+    }
+      
+}
+/*==============================================*/
+/*====Media for Main Container===*/
+@media only screen and (max-width:815px) {
+    .container {
+        font-size: 40px;
+    }
+    .block {
+        font-size: 20px;
+    }
+    .mainBlock_images, .block_html, .block_css, .block_js {
+        animation: none;
+    }
+}
