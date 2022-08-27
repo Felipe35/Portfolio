@@ -1,68 +1,74 @@
 .work_tittle {
-    text-align: center;
+  text-align: center;
 }
 .work_section {
-    margin-top: 10px;
-    height: 150px; 
-    background-color: pink;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 20px;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .work_btn {
-    cursor: pointer;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
 
+.work_btnDos {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
 }
 .work_img {
-    width: 150px;
-    height: 100%px;
-    cursor: pointer;
+  width: 150px;
+  height: 100%;
+  border-radius: 5px 20px 5px;
 }
 
 .modal-container {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    z-index: 2000;
-
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1200;
 }
-.show {
+.hidden {
+  display: none;
+}
+/* .show {
     pointer-events: auto;
     opacity:1;
-}
+} */
 .modal {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    max-width: 100%;
-    padding: 10px;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 10px;
+  justify-content: center;
 }
-.modal button {
-    width: 150px;
-    margin-top:10px;
-    padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 40px;
-	padding-left: 40px;
-	font-size: 20px;
-	background: #12EA9B;
-	color: #000;
-	border-radius: 30px;
-    cursor: pointer;
-    align-self: center;
-
+.modal_btn_cerrar {
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 20px;
+  background: #12ea9b;
+  color: #000;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
 }
 
-
-
-
+.modal_btn_cerrar:hover {
+  width: 156px;
+}

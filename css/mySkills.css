@@ -35,11 +35,11 @@
 	border-radius: 50%;
 	background-color: lightcoral;
 	box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
-	animation: traslate 2s alternate infinite;
+	animation: traslatehtml 2s alternate infinite;
 	
 }
 
-@keyframes traslate{
+@keyframes traslatehtml{
 	0% {
 		transform: translate(0);
 	}
