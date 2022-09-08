@@ -10,15 +10,24 @@ header {
   left: 0;
   z-index: 2000;
 }
+.logo_container {
+  width: 5.5rem;
+  height: 5.6rem;
+  display: flex;
+}
 .logo {
+  display: flex;
+
   color: #000000;
   /* margin-left: 20px; */
-  font-size: 30px;
-  font-weight: bold;
-  padding: 0 40px;
-  line-height: 80px;
-  font-family: "Inconsolata", monospace;
+  padding: 3px 10px;
+
   /* text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff; */
+}
+.logo img {
+  border-radius: 50px;
+  border: 3px solid #a4a0a0;
+  align-self: center;
 }
 .navegador {
   display: flex;

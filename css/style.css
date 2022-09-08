@@ -11,7 +11,10 @@ html {
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: linear-gradient(to left, #fff, #939393);
   font-family: "Inconsolata", monospace;
 }
@@ -19,7 +22,8 @@ body {
 .footer_container {
   display: flex;
   justify-content: center;
-  height: 100px;
+  margin-top: auto;
+  height: 170px;
   background: #838282;
   align-items: center;
   box-shadow: 0 0 0 10px #838282, 0 0 0 11px #838282, 0 20px 20px -12px #000;
@@ -87,4 +91,34 @@ body {
 .animeText:hover,
 .subtittle:hover {
   color: #12ea9b;
+}
+
+/*=====FOOTER ABOUT ME====*/
+.contact_info_footer {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 14px;
+  padding: 0px 10px;
+}
+.contact_info_footer li {
+  margin-right: 20px;
+}
+.contact_info_footer li a {
+  text-decoration: none;
+  color: #82ddbc;
+}
+.contact_info_footer li a:hover {
+  color: #12ea9b;
+  transition: 2s all ease;
+}
+.contact_info_phone {
+  color: #82ddbc;
+}
+.contact_info_phone:hover {
+  color: #12ea9b;
+  transition: 2s all ease;
+}
+.contact_info_li {
+  padding-top: 2px;
 }
