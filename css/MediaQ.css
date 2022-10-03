@@ -9,6 +9,7 @@
   .logo_container {
     width: 6rem;
     height: 4rem;
+    margin-top: 3px;
   }
   .nav_ul {
     flex-direction: column;
