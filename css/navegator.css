@@ -9,6 +9,7 @@ header {
   top: 0;
   left: 0;
   z-index: 2000;
+  /* display: none; */
 }
 .logo_container {
   width: 5.5rem;

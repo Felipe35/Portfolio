@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="This is my Portfolio, with information about my work experience, skills, and projects"
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -12,18 +13,18 @@
 	<link rel="stylesheet" type="text/css" href="css/mediaQ.css">
 	<link rel="stylesheet" type="text/css" href="css/miniProyects.css">
 	<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
-<title>Me</title>
+<title>My Portfolio | Introduction</title>
 </head>
 <body>
 <header id="header">
 	<nav class="navegador" id="navegador">
-			<div class="logo_container"><a href="#home" class="logo" id="logo-tittle"><img src="img/felipe.png" width="69" height="69"/></a></div>
+			<figure class="logo_container"><a href="#home" class="logo" id="logo-tittle"><img src="img/felipe.png" width="69" height="69"/></a></figure>
 			<button class="btn_nav" aria-label="Open Menu" id="btn_nav"><i class="fas fa-bars"></i></button> 
 		<ul class="nav_ul">
 			<li class="nav_li"><a href="info.html">Home</a></li>
 			<li class="nav_li"><a href="about.html">About Me</a></li>
-			<li class="nav_li"><a href="#mySkills">My Skills</a></li>
-			<li class="nav_li nav_ul_link-active"><a href="#workExp">Work</a></li>
+			<li class="nav_li"><a href="#mySkills">Projects</a></li>
+			<li class="nav_li nav_ul_link-active"><a href="workExp.html">Technical Skills</a></li>
 			<li class="nav_li"><a href="https://www.facebook.com/andres.felipe.96387" target="_Blank"><img class="nav_img_face" src="img/facebook-brands.svg"></a></li>
 			<li class="nav_li"><a href="https://github.com/Felipe35" target="_Blank"><img class="nav_img_git" src="img/github-brands.svg"></a></li>
 		</ul>
@@ -39,70 +40,115 @@
 		</ul>
 </div> -->
 
-<section class="main_container" id="home">
-	<div class="container">
+<article class="main_container" id="home">
+	<section class="container">
 		<h1 class="main_tittle"> Hey, I'm</h1>
 		<h2 class="main_tittle_h2">Felipe Heading to </h2>
 		<h3 class="main_tittle_h3">Web Development</h3>
 		<button href="#"class="container_contact">Contact me</button>
-	</div>
+	</section>
 <!--====Contact Info Modal Window====-->
-<div class="modal_contact_container hiddenContact">
+<article class="modal_contact_container hiddenContact">
 	<div class="btn_container"><button class="modal_btn btn_close">&times;</button></div>
-	<div class="modal_contac">
-		<form class="modal_form"><div class="stick"></div><span class="modal_form_tittle">Contact me</span>
-			<ul class="modal_ul">
-				<li class="modal_li">First Name</li>
-				<input class="modal_input name" placeholder="Name"></input>
-				<li class="modal_li">Last Name</li>
-				<input class="modal_input lastName" placeholder="Last Name"></input>
-				<li class="modal_li">E-mail</li>
-				<input class="modal_input email" placeholder="E-Mail"></input>
-				<li class="modal_li bottom_li">Questions</li>
+	<section class="modal_contac">
+		<form class="modal_form">
+			<fieldset class="modal_fieldset">
+				<legend><div class="stick"></div>Contact me</span></legend>
+				<label for="fName" class="modal_label">First Name</label>
+				<input type="text" name="fname" class="modal_input name" placeholder="Name"></input>
+				<label for="lName" class="modal_label">Last Name</label>
+				<input type="text" name="lName" class="modal_input lastName" placeholder="Last Name"></input>
+				<label for="email" class="modal_label">E-mail</label>
+				<input type="email" name="email" class="modal_input email" placeholder="E-Mail"></input>
+				<label for="questions" class="modal_label bottom_li">Questions</label>
 				<!-- <br> -->
-				<textarea class="modal_textArea">Enter text here: </textarea>
-			</ul>
+				<textarea name="questions" class="modal_textArea">Enter text here: </textarea>
+			</fieldset>
 			<div class="modal_submit_container">
 				<button class="modal_submit btn">Submit</button>
 			</div>
 		</form>
-	</div>
-</div>
+	</section>
+</article>
 
 <!--==Overlay Section for the Modal Window-->
 <div class="overlay hiddenContact"></div>
 
 
 <!--======IN DEVELOPING "IT HAS DISPLAY: NONE"==================================-->
-		<div class="container_img"><img src="img/programmer.png" alt="a person working in a computer"></img></div>
-</section>
+		<figure class="container_img"><img src="img/programmer.png" alt="a person working in a computer"></img><figcaption>I love code</figcaption></figure>
+</article>
 <!--SECTION 2-->
-<div class="mainBlock" id="mySkills">
-	<div class="block">
+<article class="mainBlock" id="mySkills">
+	<section class="block">
 		<h1 class="block_tittle"> Learning My Skills</h1>
 		<p class="block_text">These are the tools, I'm learning to be succes in this awsome world call Web Development. </p>
-	</div>
-	<div class="mainBlock_images">
-		<div class="block_html">
+	</section>
+
+	<!-- Article for Images -->
+	<article class="mainBlock_images">
+		<section class="block_html">
 			<div class="block_html_text">HTML</div>
 			<div class="block_html_number">5</div>
-		</div>
-		<div class="block_css">
+		</section>
+
+		<section class="block_css">
 			<div class="block_css_text">CSS</div>
 			<div class="block_css_number">3</div>
-		</div>
-		<div class="block_js">
+		</section>
+
+		<section class="block_js">
 			<div class="block_js_text">JS</div>
-		</div>
-	</div>
-</div>
+		</section>
+
+		<section class="block_python">
+			<div class="block_python_text">Python</div>
+		</section>
+
+		<section class="block_git">
+			<div class="block_git_text">Git</div>
+		</section>
+
+		<section class="block_sql">
+			<div class="block_sql_text">SQL</div>
+		</section>
+
+	</article>
+</article>
 <!--===Work Experience Block Modal===-->
+<!-- Article about work topic -->
 <h2 class="work_tittle"id="workExp">Here are some websites that are working on</h2>
-<div class="work_section">
-	<button class="work_btn"><img class="work_img" src="img/Pina.jpg"></button>
-	
-	<button class="work_btnDos" id="open">In Development</button>
-</div>
+<article class="work_section">
+	<section class="work-section-one">
+		<figure class="work-btn-container"><button class="work_btn"><img class="work_img" src="img/Pina.jpg"><figcaption>Pina Plop Company</figcaption></button></figure>
+	<div class="audio-one">
+		<p>
+         Pine apple was one of my first practical projects of creating a web site, using basic HTML and CSS. This is a scracth representation as part of my learning journey.
+        </p>
+		<br>
+		<audio controls>
+			<source src="media/smile.mp3" type="audio/mp3">
+			<source src="media/smile.ogg" type="audio/ogg">
+			<p>Your browser does not support the audio element.</p>
+		</audio>
+	</div>
+	</section>
+	<section class="work-section-two">
+		<figure class="work-btn-container"><button class="work_btnDos" id="open"><img class="work_img" src="img/rogue.png"><figcaption>Rogue Web Guide</figcaption></button></figure>
+		<div class="audio-two">
+			<p>
+			This is a project school, that I built as a programmer stundent, using HTML 5 and CSS. On this web site, I applied more advance HTML tags.
+			  </p>
+			  <br>
+			<audio controls>
+				<source src="media/stealth_wow.mp3" type="audio/mp3">
+				<source src="media/smile.ogg" type="audio/ogg">
+				<p>Your browser does not support the audio element.</p>
+			</audio>
+		</div>
+		
+	</section>
+</article>
 <!--===Work Experience Block Moda 1===-->
 
 	<div class="modal-container hidden">
@@ -123,14 +169,14 @@
 <footer class="footer_container">
 	<nav class="navFooter" id="navFooter">
 		<ul class="navFooter_ul">
-			<li class="navFooter_li"><a href="https://www.facebook.com/andres.felipe.96387" target="_Blank"><img class="nav_img_face" src="img/facebook-brands.svg"></a></li>
-			<li class="navFooter_li"><a href="https://github.com/Felipe35" target="_Blank"><img class="nav_img_git" src="img/github-brands.svg"></a></li>
+			<li class="navFooter_li"><a href="https://www.facebook.com/andres.felipe.96387" target="_Blank"><img class="nav_img_face" src="img/facebook-brands.svg" alt="Facebook logo"></a></li>
+			<li class="navFooter_li"><a href="https://github.com/Felipe35" target="_Blank"><img class="nav_img_git" src="img/github-brands.svg" alt="Github logo"></a></li>
 		</ul>
 		<ul class="navFooter_sub_ul">
-			<li class="navFooter_sub_li"><a class="navFooter_a" href="#home"></a>Home</li>
-			<li class="navFooter_sub_li"><a class="navFooter_a" href="#home"></a>About Me</li>
-			<li class="navFooter_sub_li"><a class="navFooter_a" href='#mySkills'></a>My Skills</li>
-			<li class="navFooter_sub_li"><a class="navFooter_a" href="#workExp"></a> Work</li>
+			<li class="navFooter_sub_li"><a class="navFooter_a" href="#header"></a>Home</li>
+			<li class="navFooter_sub_li"><a class="navFooter_a" href="about.html"></a>About Me</li>
+			<li class="navFooter_sub_li"><a class="navFooter_a" href='#mySkills'></a>Projects</li>
+			<li class="navFooter_sub_li"><a class="navFooter_a" href="#workExp"></a> Work Skills</li>
 		</ul>
 		<br>
 	<ul class="contact_info_footer">

@@ -1,140 +1,198 @@
 /*==Main Block SKills==*/
 .mainBlock {
-	margin-top: 20px;
-	width: 100%;
-	height: 300px;
-	display: flex;
-	justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Style rule for section sub - class block */
 .block {
-	margin-left: 20px;
-	font-size: 1.5em;
+  margin-left: 20px;
+  font-size: 1.5em;
 }
 
 /*==SKILLS BLOCK main BLock Images===*/
 .mainBlock_images {
-	height: 500px;
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  position: relative;
+  width: 30%;
+  justify-content: space-around;
 }
 
 .block_text {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 /*===HTML BLOCK===*/
 .block_html {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: lightcoral;
-	box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
-	animation: traslatehtml 2s alternate infinite;
-	
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
+  /*animation: traslatehtml 2s alternate infinite;*/
 }
 
-@keyframes traslatehtml{
-	0% {
-		transform: translate(0);
-	}
-	100% {
-		transform: translate(120px);
-	}
-}
-
+/*@keyframes traslatehtml {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(120px);
+  }
+}*/
 
 .block_html_text {
-	text-align: center;
-	border-radius: 50%;
-	height: 20px;
-	color: #fff;
-	font-size: 20px;
-	letter-spacing: 4px;
-
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
 }
 
-
 .block_html_number {
-	text-align: center;
-	border-radius: 50%;
-	height: 20px;
-	color: #fff;
-	font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  color: #fff;
+  font-size: 40px;
 }
 /*==CSS BLOCK==*/
 .block_css {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: lightseagreen;
-	box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
-	animation: traslatecss 2s alternate infinite;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightseagreen;
+  box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
+  /*animation: traslatecss 2s alternate infinite;*/
 }
-@keyframes traslatecss{
-	50% {
-		transform: translate(0);
-	}
-	100% {
-		transform: translate(100px);
-	}
-}
-
+/*@keyframes traslatecss {
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100px);
+  }
+}*/
 
 .block_css_text {
-	text-align: center;
-	border-radius: 50%;
-	height: 20px;
-	color: #fff;
-	font-size: 20px;
-	letter-spacing: 4px;
-
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
 }
 
 .block_css_number {
-	text-align: center;
-	border-radius: 50%;
-	height: 20px;
-	color: #fff;
-	font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  color: #fff;
+  font-size: 40px;
 }
 /*==JS BLOCK===*/
 .block_js {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-color: #EEF034;
-	box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
-	animation: traslatejs 4s alternate infinite;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eef034;
+  box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
+  /*animation: traslatejs 4s alternate infinite;*/
 }
-@keyframes traslatejs{
-	45% {
-		transform: translate(0);
-	}
-	100% {
-		transform: translate(100px);
-	}
-}
+/*@keyframes traslatejs {
+  45% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100px);
+  }
+}*/
 
 .block_js_text {
-	text-align: center;
-	border-radius: 50%;
-	height: 50px;
-	color: #C6C2C2;
-	font-size: 50px;
-	letter-spacing: 4px;
-
+  text-align: center;
+  border-radius: 50%;
+  height: 50px;
+  color: #c6c2c2;
+  font-size: 50px;
+  letter-spacing: 4px;
 }
+
+/*==Python BLOCK===*/
+.block_python{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #34f04a49;
+  box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
+}
+
+.block_python_text {
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  color: #312e2e;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+
+/*==Git BLOCK===*/
+.block_git{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f09b3449;
+  box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
+}
+
+.block_git_text {
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  color: #312e2e;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+
+/*==PostgreSQL BLOCK===*/
+.block_sql{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1ddfedf5;
+  box-shadow: 2px 2px 7px #000, 2px 2px 7px #000;
+}
+
+.block_sql_text {
+  text-align: center;
+  border-radius: 50%;
+  height: 35px;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+

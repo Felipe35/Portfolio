@@ -20,6 +20,20 @@
   </head>
   <body>
     <header id="header">
+      <nav class="navegador" id="navegador">
+          <div class="logo_container"><a href="#home" class="logo" id="logo-tittle"><img src="../img/felipe.png" width="69" height="69"/></a></div>
+          <button class="btn_nav" aria-label="Open Menu" id="btn_nav"><i class="fas fa-bars"></i></button> 
+        <ul class="nav_ul">
+          <li class="nav_li"><a href="../info.html">Home</a></li>
+          <li class="nav_li"><a href="../about.html">About Me</a></li>
+          <li class="nav_li nav_ul_link-active"><a href="../workExp.html">Technical Skills</a></li>
+          <li class="nav_li"><a href="https://www.facebook.com/andres.felipe.96387" target="_Blank"><img class="nav_img_face" src="img/facebook-brands.svg"></a></li>
+          <li class="nav_li"><a href="https://github.com/Felipe35" target="_Blank"><img class="nav_img_git" src="img/github-brands.svg"></a></li>
+        </ul>
+      </nav>
+      
+    </header>
+    <!-- <header id="header">
       <a href="#inicio"><h1 class="logo" id="logo-tittle">Felipe</h1></a>
       <nav class="navegador" id="navegador">
         <ul class="nav_ul">
@@ -40,12 +54,13 @@
         </ul>
       </nav>
       <div class="btn_nav" id="btn_nav"><i class="fas fa-bars"></i></div>
-    </header>
-<br><br><br><br><br><br><br>
+    </header> -->
+
+<!-- <br><br><br><br><br> -->
 
 <div class="back_container"><a class="back_link_arrow" href="../info.html"><i class="fas fa-angle-left"></i></a><a class="back_link" href="../info.html" title="Go to the last page" id="inicio" >Back</a></div>
 
-<section class="main_container">
+<section class="main_container_proyects">
   <section class="faren_calc">
       <h2 class="faren_tittle">Farenheit Calculator</h2>
       <label for="c">Fahrenheit <img class="c_temperature" src="img/thermo.svg" alt="temperature"> <input type="number" class="faren_data" placeholder="Insert Value in C"> F</label>
@@ -54,6 +69,8 @@
         <button class="btn again">Reset</button>
         <button class="btn switch">Switch</button>
       </div>
+   
+    
       <div class="faren_result">
         <p type="number" class="faren_result_label">Celcius: <span type="text" name="celcius" class="faren_result_text"></p>
         <p class="faren_message">The temperature is too:</p>
@@ -61,7 +78,7 @@
       <div class="calculation_main">
         <p class="calculation_text">Calculation: <span type="text" class="calculation_message"></p>    </div>
         </div>
-      </section>
+  </section>
 
         <!-- Guess Wow Class -->
     <!-- <div class="guess_container">
@@ -105,6 +122,7 @@
     </section>
   </section>
 </main>
+</section>
 
 
     <script type="text/javascript" src="../javaS/java.js"></script>

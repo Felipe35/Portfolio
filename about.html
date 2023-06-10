@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="This is some information about my personal things"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -15,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap"
       rel="stylesheet"
     />
-    <title>About me</title>
+    <title>About me | Personal information</title>
   </head>
   <body>
     <header id="header">
@@ -31,8 +32,8 @@
         <ul class="nav_ul">
           <li class="nav_li"><a href="info.html">Home</a></li>
           <li class="nav_li"><a href="about.html">About Me</a></li>
-          <li class="nav_li"><a href="#mySkills">My Skills</a></li>
-          <li class="nav_li nav_ul_link-active"><a href="#workExp">Work</a></li>
+          <li class="nav_li"><a href="#mySkills">Projects</a></li>
+          <li class="nav_li nav_ul_link-active"><a href="workExp.html">Technical Sillks</a></li>
           <li class="nav_li">
             <a
               href="https://www.facebook.com/andres.felipe.96387"
@@ -49,18 +50,18 @@
       </nav>
     </header>
 
-    <main class="about_container">
-      <div class="about_img">
-        <img src="img/felipeAbout.bmp" width="250" height="300" />
-        <p class="about_container_text" >Hey there!</p>
-      </div>
+    <section class="about_container">
+      <section class="about_img">
+        <figure class="about_img_fig"><img src="img/felipeAbout.bmp"/><figcaption>Hey there!</figcaption></figure>
+        <!-- <p class="about_container_text" >Hey there!</p> -->
+      </section>
       <div class="about_text">
         <h1>Hello,</h1>
         <h2>a bit about me</h2>
         <br />
-        Programmer apprentice focuses on website technologies - front end, looking for a company with an opportunity to grow. Current KCTCS student of computer programming.
+        Programmer apprentice focuses on website technologies. I'm enthusiastic, and motivate KCTCS's student of CIT Programming. Because I could not see myself doing anything different than develop.
       </div>
-    </main>
+    </section>
     <!--Navegator Responsive-->
     <!-- <div class="nav_responsive_container">
 		<ul class="nav_ul_responsive">
@@ -69,6 +70,7 @@
 			<li class="nav_li"><a href="#workExp">Work</a></li>
 		</ul>
 </div> -->
+<div class="forward_container"><a class="forward_link_arrow" href="MinProyects/index.html"><i class="fas fa-angle-right"></i></a><a class="forward_link" href="MinProyects/index.html" title="Go to miniProyects" id="inicio" >Go to Proyects</a></div>
 
     <footer class="footer_container">
       <nav class="navFooter" id="navFooter">
@@ -77,12 +79,12 @@
             <a
               href="https://www.facebook.com/andres.felipe.96387"
               target="_Blank"
-              ><img class="nav_img_face" src="img/facebook-brands.svg"
+              ><img class="nav_img_face" src="img/facebook-brands.svg" alt="Facebook logo"
             /></a>
           </li>
           <li class="navFooter_li">
             <a href="https://github.com/Felipe35" target="_Blank"
-              ><img class="nav_img_git" src="img/github-brands.svg"
+              ><img class="nav_img_git" src="img/github-brands.svg" alt="Github logo"
             /></a>
           </li>
         </ul>
@@ -94,10 +96,10 @@
             <a class="navFooter_a" href="#home"></a>About Me
           </li>
           <li class="navFooter_sub_li">
-            <a class="navFooter_a" href="#mySkills"></a>My Skills
+            <a class="navFooter_a" href="#mySkills"></a>Projects
           </li>
           <li class="navFooter_sub_li">
-            <a class="navFooter_a" href="#workExp"></a> Work
+            <a class="navFooter_a" href="#workExp"></a> Work Skills
           </li>
         </ul>
         <br>

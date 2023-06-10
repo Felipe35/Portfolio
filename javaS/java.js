@@ -3,9 +3,19 @@ const modalContact = document.querySelector(".modal_contact_container");
 const btnOpenModalContac = document.querySelector(".container_contact");
 const btnCloseModalContac = document.querySelector(".btn_close");
 const overlayBtn = document.querySelector(".overlay"); //--This overlay works with Contact modal and Websites modal
+
+/* Contact Modal Window Inputs */
+const modalInputName = document.querySelector(".name");
+const modalInputLastName = document.querySelector(".lastName");
+const modalInputEmail = document.querySelector(".email");
+// const modalInputs = document.querySelectorAll(".modal_input");
+/* Modal Contact Button */
+const bntContact = document.querySelector(".modal_submit");
+
 //Navegator btn window
 const navMenu = document.querySelector(".nav_ul");
 const btnToggle = document.querySelector(".btn_nav");
+
 // const btnDisplayLi = document.querySelector(".nav_li");
 // btnDisplayLi.setAttribute("onclick", "optionSelected(this)");
 
@@ -33,7 +43,7 @@ btnOpenModalContac.addEventListener("click", openModalContact);
 btnCloseModalContac.addEventListener("click", closeModalContact);
 
 document.addEventListener("keydown", function (event) {
-  console.log(event.key);
+  // console.log(event.key);
   if (
     event.key === "Escape" &&
     !modalContact.classList.contains("hiddenContact")
@@ -66,7 +76,7 @@ btnsOpenModal.addEventListener("click", openModal);
 btnsCloseModal.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (event) {
-  console.log(event.key);
+  // console.log(event.key);
   if (event.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
@@ -76,25 +86,64 @@ document.addEventListener("keydown", function (event) {
 //============================================//
 /*===Inputs Warning Messages for contact Modal Window===*/
 /*===In Development====*/
-const firstName = document.querySelector(".name");
-const lastName = document.querySelector(".lastName");
-const email = document.querySelector(".email");
+const warningMessageCorrectString = function (str) {
+  const nameStr = fixString(modalInputName.value);
+  const lastNameStr = fixString(modalInputLastName.value);
+  const validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-const dataType = function (text) {
-  if (typeof text === typeof "string") {
-    console.log("it is a string");
+  if (
+    str.value.match(validation) &&
+    nameStr === nameStr &&
+    lastNameStr === lastNameStr
+  ) {
+    console.log(nameStr, lastNameStr);
+    console.log("You have entered a valid addres");
   } else {
-    console.log("it is a number");
+    console.log("You have entered an invalid addres");
   }
+  return str;
 };
+// warningMessageCorrectString("anfepehe1@hotmail.com");
+
+const checkSpaces = (letter) =>
+  letter.includes(" ") ? letter.replace(/ /g, "") : letter;
+
+const fixString = function (str) {
+  const toLower = str.toLowerCase().trim();
+  const toUpper = toLower.replace(toLower[0], toLower[0].toUpperCase());
+  const goodStr = checkSpaces(toUpper);
+  return goodStr;
+};
+
+bntContact.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  // const nameStr = fixString(modalInputName.value);
+  // const lastNameStr = fixString(modalInputLastName.value);
+  // const emailStr = fixString(modalInputEmail.value);/
+  const validationEmail = warningMessageCorrectString(modalInputEmail);
+
+  // const upper = checkInput.replace(checkInput[0], checkInput[0].toUpperCase());
+});
+// const firstName = document.querySelector(".name");
+// const lastName = document.querySelector(".lastName");
+// const email = document.querySelector(".email");
+
+// const dataType = function (text) {
+//   if (typeof text === typeof "string") {
+//     console.log("it is a string");
+//   } else {
+//     console.log("it is a number");
+//   }
+// };
 
 // dataType("1");
 
-firstName.addEventListener("input", function () {
-  const dataSave = [firstName.textContent];
-  console.log(dataSave);
-  dataType();
-});
+// firstName.addEventListener("input", function () {
+//   const dataSave = [firstName.textContent];
+//   console.log(dataSave);
+//   dataType();
+// });
 
 // const inputWarningMsn = function () {
 //   if (typeof firstName === typeof "error") {

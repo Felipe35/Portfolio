@@ -3,7 +3,7 @@
 }
 .work_section {
   margin-top: 20px;
-  height: 150px;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -15,11 +15,25 @@
   border-radius: 5px;
 }
 
+/* Style rule for figcaption sub - class work_btn */
+.work_btn figcaption,
+.work_btnDos figcaption {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #035c3b;
+  text-shadow: 3px 3px 10px #38e7a7f8;
+}
 .work_btnDos {
   cursor: pointer;
   width: 150px;
   height: 150px;
   border-radius: 5px;
+}
+
+.work-btn-container {
+  padding: 2%;
+  text-align: center;
 }
 .work_img {
   width: 150px;
@@ -27,6 +41,32 @@
   border-radius: 5px 20px 5px;
 }
 
+/* Style rule for work sections display */
+.work-section-one,
+.work-section-two {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Style rule for work audio sections */
+.audio-one,
+.audio-two {
+  padding: 1%;
+  margin-top: 1%;
+}
+/* Style rule for work audio paragraphs */
+.audio-one p,
+.audio-two p {
+  padding: 1%;
+}
+
+/* Style rule for audio */
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  border-radius: 99px;
+  max-height: 32px;
+}
 .modal-container {
   display: flex;
   position: fixed;
@@ -38,6 +78,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1200;
+  /* display: none; */
 }
 .hidden {
   display: none;
@@ -71,4 +112,39 @@
 
 .modal_btn_cerrar:hover {
   width: 156px;
+}
+
+/* Style Rule for WORK EXPERIENCE HTML PAGE */
+
+table {
+  /* margin-top: 200px; */
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(68, 64, 64);
+  margin: 150px auto 150px auto;
+  width: 60%;
+  height: 60%;
+  background-color: #e0e0e0;
+  box-shadow: 7px 7px #45566754, -8px -8px 15px rgb(81 101 121/4%),
+    inset -5px -4px 13px 0px rgb(255 255 255 / 94%);
+  padding: 2%;
+}
+
+/* Style rule for caption - tr,th,td tags */
+caption {
+  font-size: 2em;
+  padding: 1%;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 2%;
+}
+
+th,
+td {
+  font-size: 1.2em;
+  border: 2px solid #7b7676;
 }

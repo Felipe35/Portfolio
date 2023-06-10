@@ -1,4 +1,5 @@
 /*==TITULO===*/
+/* Style rule for article - sub class main_container */
 .main_container {
   width: 100%;
   height: 600px;
@@ -15,6 +16,8 @@
 .main_tittle_h2 {
   color: #12ea9b;
 }
+
+/* Style rule for section sub - class container */
 .container {
   align-items: center;
   width: 100%;
@@ -46,7 +49,8 @@
   position: relative;
   text-align: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: column;
   margin-right: 10px;
   padding: 10px;
 }
@@ -57,6 +61,16 @@
   align-self: center;
   border-radius: 30px;
   /* animation: move_img 6s ease-in-out infinite; */
+}
+
+/* Style rule for figcaption sub - class container_img */
+.container_img figcaption {
+  /* color: #0000; */
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #11db9188;
+  text-shadow: 3px 3px 10px #5aebb5f8;
 }
 /*==IMG Animation==*/
 /* @keyframes move_img {
@@ -71,14 +85,17 @@
   }
 } */
 /*====== NEEDS TO WORK ON THIS MODAL WINDOW FORM=====*/
+/* Style rule for article sub  - class modal_contact_container */
 .modal_contact_container {
   position: absolute;
   margin-top: 200px;
   display: flex;
   flex-direction: column;
+  top: 1%;
+  left: 30%;
   border-radius: 5px;
   background-color: #e0e0e0;
-  width: 400px;
+  width: 30%;
   height: 700px;
   /* box-shadow: 17px 17px 34px, -17px -17px 34px #ffffff; */
   box-shadow: 7px 7px #45566754, -8px -8px 15px rgb(81 101 121/4%),
@@ -87,7 +104,8 @@
   font-size: 15px;
   color: black;
   font-weight: 600;
-  margin-left: 20px;
+
+  /* margin-left: 20px; */
   z-index: 1500;
 }
 
@@ -102,22 +120,29 @@
 }
 .stick {
   position: absolute;
-  width: 0.5em;
-  height: 1.8em;
+  width: 0.3em;
+  height: 1.2em;
   background-color: #0b7f55;
-  margin-left: 90px;
+  margin-left: -15px;
 }
-.modal_form_tittle {
+
+/* Style rule for form */
+legend {
   font-weight: bold;
   font-size: 30px;
+  padding: 2%;
 }
-.modal_ul {
+/* .modal_form_tittle {
+  font-weight: bold;
+  font-size: 30px;
+} */
+.modal_fieldset {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
 }
 
-.modal_li {
+.modal_label {
   text-align: start;
   margin-top: 20px;
 }
@@ -131,7 +156,7 @@
   /* width: 220px; */
 }
 .modal_submit_container {
-  padding-top: 10px;
+  padding-top: 3px;
   width: 400px;
   display: flex;
   justify-content: center;
@@ -197,6 +222,7 @@
   left: 0;
   height: 1280px;
   width: 100%;
+  margin-top: 82px;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 1000;
@@ -206,10 +232,12 @@
 .about_container {
   display: flex;
   flex-direction: row;
-  margin-top: auto;
+  /* margin-top: auto; */
+  margin-top: 120px;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 100px;
+  /* min-height: 100px; */
+  height: 100%;
   font-size: 20px;
   /* margin-left: 10px; */
   padding: 10px;
@@ -220,24 +248,30 @@
 
 .about_img {
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: center;
-  width: 280px;
-  height: 300px;
+  width: 20%;
+  height: 20%;
   transform: rotate(-10deg);
-  padding-bottom: 40px;
-  border-radius: 5px;
+  /* padding-bottom: 40px; */
+  border-radius: 8px;
   /* background-color: #12ea9b; */
 }
 .about_img img {
   align-self: center;
-  width: 240px;
-  height: 240px;
   border-radius: 5px;
+  border: #000 solid;
+  /* filter: grayscale(75%);  */
+}
 
-  /* border: #000 solid; */
-  /* filter: grayscale(75%); */
+/* Style rule for figure sub - class about_img */
+.about_img_fig figcaption {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #035c3b;
+  text-shadow: 3px 3px 10px #38e7a7f8;
 }
 .about_container_text {
   position: absolute;
